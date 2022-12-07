@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 router.get('/new', async (req, res) => {
     try {
         let checklist = new Checklist();
-        res.status(200).render('/checklists/new', { checklist: checklist });
+        res.status(200).render('checklists/new', { checklist: checklist });
     } catch (error) {
         res.status(500).render('pages/error', { error: 'Error loading the form' })
     }
