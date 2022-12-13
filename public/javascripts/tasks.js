@@ -3,7 +3,7 @@ const setTagAsDone = async (element, id) => {
     try {
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let body = JSON.stringify({ task: { done: element.checked } });
-        let response = fetch(`/tasks/${id}?_method=put`, {
+        let response = await fetch(`/tasks/${id}?_method=put`, {
             headers: headers,
             body: body,
             method: 'PUT'
