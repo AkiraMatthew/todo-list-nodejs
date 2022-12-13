@@ -1,1 +1,1 @@
-# to-do-list made using NodeJS and MongoDB
+# to-do-list
